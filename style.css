@@ -1,69 +1,66 @@
 body {
     margin: 0;
-    font-family: sans-serif;
-    background-color: #fff;
-    color: #000;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff;
+    color: #000000;
     text-align: center;
 }
 header {
-    background: linear-gradient(to right, #000, #fff);
-    color: #fff;
+    background: linear-gradient(to right, #000000, #ffffff);
+    color: white;
     padding: 20px;
 }
 header h1 {
-    font-size: 2rem;
+    margin: 0;
 }
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
     padding: 20px;
 }
-.category {
-    background-color: #f4f4f4;
-    color: #000;
+h2 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #222;
+}
+.product {
+    background: #f7f7f7;
+    margin: 20px auto;
     padding: 15px;
+    max-width: 300px;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.category:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-.category img {
+.product img {
     width: 100%;
     border-radius: 10px;
-    margin-top: 10px;
-}
-.category h2 {
-    margin: 10px 0 5px 0;
 }
 .price {
-    font-weight: bold;
     color: #128C7E;
-    font-size: 1.1rem;
-    margin-top: 5px;
+    font-weight: bold;
 }
-.cta {
-    margin: 30px;
-}
-.whatsapp-button {
-    background-color: #25D366;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1rem;
+.order-button {
     display: inline-block;
-    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
 }
-.whatsapp-button:hover {
-    background-color: #128C7E;
-    transform: scale(1.05);
+.order-button:hover {
+    background: #128C7E;
 }
 footer {
-    background-color: #000;
-    color: #fff;
+    background: #000000;
+    color: white;
     padding: 10px;
     font-size: 0.9rem;
 }
